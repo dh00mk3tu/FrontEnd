@@ -1,25 +1,32 @@
-<html>
-    <head>
-        <title>Anirudh Rath</title>
-        <link rel="stylesheet" href="src.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="menu">
-                <ul>
-                    <li class="about"><a href="#" class="abt-btn"> About </a></a></li>
-                    <li> Contact </li>
-                    <li> Gallery</li>
-                </ul>
-            </div>
-        </div>
-        <div class="box-1">
-                <!-- Hover #3 -->
-                <div class="box-3">
-                  <div class="btn btn-three">
-                    <span>ABOUT</span>
-                  </div>
-                </div>
+<!DOCTYPE html>
 
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Nav Bar Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav>
+      <ul>
+<li class="logo">dh00mk3tu</li>
+<li class="items"><a href="#">Home</a></li>
+<li class="items"><a href="#">About</a></li>
+<li class="items"><a href="#">Blogs</a></li>
+<li class="items"><a href="#">Contact</a></li>
+<li class="items"><a href="#">Feedback</a></li>
+<li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+</ul>
+</nav>
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
+  </body>
 </html>

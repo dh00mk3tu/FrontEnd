@@ -1,182 +1,93 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+}
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-div[class*=box] {
-	height: 33.33%;
-	width: 100%; 
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
-.box-1 { background-color: #FF6766; }
-.box-2 { background-color: #3C3C3C; }
-.box-3 { background-color: #66A182; }
-
-.btn {
-	line-height: 50px;
-	height: 50px;
-	text-align: center;
-	width: 250px;
-	cursor: pointer;
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
 }
-
-/* 
-========================
-      BUTTON ONE
-========================
-*/
-.btn-one {
-	color: #FFF;
-	transition: all 0.3s;
-	position: relative;
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
 }
-.btn-one span {
-	transition: all 0.3s;
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #33ffff;
+  opacity: 0;
+  transition: all 0.2s linear;
 }
-.btn-one::before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color: rgba(255,255,255,0.5);
-	border-bottom-color: rgba(255,255,255,0.5);
-	transform: scale(0.1, 1);
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
 }
-.btn-one:hover span {
-	letter-spacing: 2px;
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
 }
-.btn-one:hover::before {
-	opacity: 1;	
-	transform: scale(1, 1);	
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
 }
-.btn-one::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.3s;
-	background-color: rgba(255,255,255,0.1);
+nav ul li:hover a{
+  color: cyan;
 }
-.btn-one:hover::after {
-	opacity: 0;	
-	transform: scale(0.1, 1);
+nav ul li i{
+  font-size: 23px;
 }
-
-
-/* 
-========================
-      BUTTON TWO
-========================
-*/
-.btn-two {
-	color: #FFF;
-	transition: all 0.5s;
-	position: relative;	
+nav ul li.btn{
+  display: none;
 }
-.btn-two span {
-	z-index: 2;	
-	display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;	
+nav ul li.btn.hide i:before{
+  content: '\f00d';
 }
-.btn-two::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.5s;
-	border: 1px solid rgba(255,255,255,0.2);
-	background-color: rgba(255,255,255,0.1);
-}
-.btn-two::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.5s;
-	border: 1px solid rgba(255,255,255,0.2);
-	background-color: rgba(255,255,255,0.1);
-}
-.btn-two:hover::before {
-  transform: rotate(-45deg);
-  background-color: rgba(255,255,255,0);
-}
-.btn-two:hover::after {
-  transform: rotate(45deg);
-  background-color: rgba(255,255,255,0);
-}
-
-
-/* 
-========================
-      BUTTON THREE
-========================
-*/
-.btn-three {
-	color: #FFF;
-	transition: all 0.5s;
-	position: relative;
-}
-.btn-three::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(255,255,255,0.1);
-	transition: all 0.3s;
-}
-.btn-three:hover::before {
-	opacity: 0 ;
-	transform: scale(0.5,0.5);
-}
-.btn-three::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border: 1px solid rgba(255,255,255,0.5);
-	transform: scale(1.2,1.2);
-}
-.btn-three:hover::after {
-	opacity: 1;
-	transform: scale(1,1);
+@media all and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #33ffff,
+                inset 0 0 10px #66ffff;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
 }
