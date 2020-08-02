@@ -1,32 +1,49 @@
 <!DOCTYPE html>
-
-  <head>
-    <meta charset="utf-8">
-    <title>Nav Bar Test</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <nav>
-      <ul>
-<li class="logo">dh00mk3tu</li>
-<li class="items"><a href="#">Home</a></li>
-<li class="items"><a href="#">About</a></li>
-<li class="items"><a href="#">Blogs</a></li>
-<li class="items"><a href="#">Contact</a></li>
-<li class="items"><a href="#">Feedback</a></li>
-<li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
-</ul>
-</nav>
-    <script>
-      $(document).ready(function(){
-        $('.btn').click(function(){
-          $('.items').toggleClass("show");
-          $('ul li').toggleClass("hide");
-        });
-      });
-    </script>
-  </body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Footer</title>
+</head>
+<body>
+    <div class="footer">
+        <div class="inner-footer">
+            <div class="footer-items">
+                <h1>Olex Healthcare</h1>
+            </div>
+            <div class="footer-items">
+                <h2>Site Map</h2>
+                <div class="border"></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-items">
+                <h2>Contact Us</h2>
+                <div class="border"></div>
+                <ul>
+                    <li><i class="fa fa-map" aria-hidden="true"></i>Addr Line 1</li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Addr Line 2</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>Phone</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>Mail</li>
+                </ul>
+                <div class="socialMedia">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright &copy; Olex Healthcare 2020. All Rights Reserved.
+        </div>
+    </div>
+</body>
 </html>
+
