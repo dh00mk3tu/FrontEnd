@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Shipping Details</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+        * {
+            font-family: 'Alata', sans-serif;
+        }
+        .container {
+            /* border: 2px solid #000; */
+            background-color: rgb(221, 221, 221);
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px .1px #888888;
+            /* height:100; */
+        }
+        form {
+            animation: fadeIn .7s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                display: none;
+                margin-top: 1em;
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .form-control {
+            background-color:rgb(245, 245, 245);
+            box-shadow: 0px 2px 4px .1px #888888;
+            border-radius: 15px;
+        }
+        .container-inner {
+            padding-top: 2%;
+        }
+        .form-control:active {
+            box-shadow: 0px 2px 10px .1px #888888;
+            
+        }
+        .btn-primary {
+            border-radius: 10px;
+        }
+        .divider {
+            height: 5px;
+            width: 100%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+
+            border-radius: 25px;
+            background-color: rgb(167, 167, 167);
+            box-shadow: 0px 2px 2px .1px #888888;
+        }
+    </style>
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Full Name</label>
+                <input type="name" class="form-control" id="in" placeholder="Full Name" required="true">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Email</label>
+                <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required="true">
+            </div>
+            </div>
+            <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required="true">
+            </div>
+            <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, or Floor" required="true">
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-5">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Ghaziabad" required="true">
+            </div>
+            <div class="form-group col-md-5">
+                <label for="inputCity">State</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Uttar Pradesh" required="true">
+            </div>
+            
+            
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="201005" required="true">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputZip">India</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="India" required="true">
+            </div>
+            
+            <div class="form-group col-md-4 ml-auto">
+                <label for="inputZip">Mobile Number</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="99XXXXXX89" required="true">
+            </div>
+            <div class="divider mr-auto"></div>
+            
+            <br> 
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputZip">Company Name</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="ABC Inc.">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputZip">GST ID</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="99XXXXXX89">
+                </div>
+                <div class="form-group col-md-7">
+                    <label for="inputAddress">Company Address 1</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group col-md-7">
+                    <label for="inputAddress">Company Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputAddress">State</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Uttar Pradesh">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputAddress">Zip</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="201005">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputAddress">Country</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="India">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputAddress">Company Number</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="99XXXXXX89">
+                </div>
+                
+            </div>
+            <div class="container-inner ml-auto btn-lg">
+                <button type="submit" class="btn btn-primary">Proceed To Check Out</button>
+            </div>
+ 
+            </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
