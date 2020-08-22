@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Nav Bar Test</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,51 @@
 <li class="items"><a href="#">Blogs</a></li>
 <li class="items"><a href="#">Contact</a></li>
 <li class="items"><a href="#">Feedback</a></li>
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-secondary">
+    Split dropup
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+<div class="items dropdown">
+  <button class="dropbtn">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+  
+</div>
+<li class="items"><a href="#">Shop Test</a></li>
 <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
 </ul>
 </nav>
